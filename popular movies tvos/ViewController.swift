@@ -39,7 +39,10 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
                     
                     } catch {   }
             }
-       task.resume()     
+            
+        }
+        
+       task.resume()
         
     }
         
@@ -66,9 +69,13 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         
     }
      
-    func collectionView(<#T##collectionView: UICollectionView##UICollectionView#>, layout: <#T##UICollectionViewLayout#>, sizeForItemAtIndexPath: <#T##NSIndexPath#>) {
+    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
+        
+        return CGSizeMake(310, 479)
+        
+    }
     
-        return CGSize(width: 310, height: 479)
+    
         
     }
     
