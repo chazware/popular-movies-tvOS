@@ -24,7 +24,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         
         downloadData()
     }
-    // This download should be done in the model but put here for convenience
+    // This download should be done in the model but put here for convenience.
     func downloadData() {
         
         let url = NSURL(string: URL_BASE)!  //forced upwrapped because we know this works otherwise try catch for error on url.
