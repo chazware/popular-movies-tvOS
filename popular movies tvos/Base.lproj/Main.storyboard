@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="popular_movies_tvos" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="1244" height="700"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="IO3-Ah-rq3">
+                                <rect key="frame" x="0.0" y="0.0" width="1244" height="700"/>
+                                <animations/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="H0u-RN-sqQ">
+                                    <size key="itemSize" width="360" height="590"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" id="Ksd-wL-l9H" customClass="MovieCell" customModule="popular_movies_tvos" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="360" height="590"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="360" height="590"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="thor" translatesAutoresizingMaskIntoConstraints="NO" id="Ezg-aZ-o2j">
+                                                    <rect key="frame" x="25" y="22" width="310" height="479"/>
+                                                    <animations/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="479" id="8yw-bv-MFD"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jea-p9-vS5">
+                                                    <rect key="frame" x="25" y="524" width="310" height="38"/>
+                                                    <animations/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <animations/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <animations/>
+                                        <constraints>
+                                            <constraint firstItem="Ezg-aZ-o2j" firstAttribute="top" secondItem="Ksd-wL-l9H" secondAttribute="topMargin" constant="14" id="PsB-iU-dVg"/>
+                                            <constraint firstItem="Ezg-aZ-o2j" firstAttribute="leading" secondItem="Ksd-wL-l9H" secondAttribute="leadingMargin" constant="17" id="Tmf-fn-DCi"/>
+                                            <constraint firstAttribute="trailingMargin" secondItem="Ezg-aZ-o2j" secondAttribute="trailing" constant="17" id="Uss-s1-5Zw"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="moveLbl" destination="Jea-p9-vS5" id="DTr-9x-MPc"/>
+                                            <outlet property="movieImg" destination="Ezg-aZ-o2j" id="g30-Aw-cyu"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="IO3-Ah-rq3" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="AmM-bY-2jT"/>
+                            <constraint firstAttribute="trailing" secondItem="IO3-Ah-rq3" secondAttribute="trailing" id="Hyv-bE-Yx3"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="IO3-Ah-rq3" secondAttribute="bottom" id="IOh-gs-Cdb"/>
+                            <constraint firstItem="IO3-Ah-rq3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="n28-NR-9RB"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="1244" height="700"/>
+                    <connections>
+                        <outlet property="collectionView" destination="IO3-Ah-rq3" id="NS1-15-3MN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="738" y="254"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="thor" width="1024" height="1479"/>
+    </resources>
+</document>

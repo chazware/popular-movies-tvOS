@@ -1,0 +1,286 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6E7D9A151C0A89CD00D81C6A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7D9A141C0A89CD00D81C6A /* AppDelegate.swift */; };
+		6E7D9A171C0A89CD00D81C6A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7D9A161C0A89CD00D81C6A /* ViewController.swift */; };
+		6E7D9A1A1C0A89CD00D81C6A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E7D9A181C0A89CD00D81C6A /* Main.storyboard */; };
+		6E7D9A1C1C0A89CE00D81C6A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E7D9A1B1C0A89CE00D81C6A /* Assets.xcassets */; };
+		6E7D9A241C0AC51A00D81C6A /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7D9A231C0AC51A00D81C6A /* MovieCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6E7D9A111C0A89CD00D81C6A /* popular movies tvos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "popular movies tvos.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E7D9A141C0A89CD00D81C6A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6E7D9A161C0A89CD00D81C6A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6E7D9A191C0A89CD00D81C6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6E7D9A1B1C0A89CE00D81C6A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6E7D9A1D1C0A89CE00D81C6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6E7D9A231C0AC51A00D81C6A /* MovieCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6E7D9A0E1C0A89CD00D81C6A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6E7D9A081C0A89CD00D81C6A = {
+			isa = PBXGroup;
+			children = (
+				6E7D9A131C0A89CD00D81C6A /* popular movies tvos */,
+				6E7D9A121C0A89CD00D81C6A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6E7D9A121C0A89CD00D81C6A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6E7D9A111C0A89CD00D81C6A /* popular movies tvos.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6E7D9A131C0A89CD00D81C6A /* popular movies tvos */ = {
+			isa = PBXGroup;
+			children = (
+				6E7D9A141C0A89CD00D81C6A /* AppDelegate.swift */,
+				6E7D9A161C0A89CD00D81C6A /* ViewController.swift */,
+				6E7D9A181C0A89CD00D81C6A /* Main.storyboard */,
+				6E7D9A1B1C0A89CE00D81C6A /* Assets.xcassets */,
+				6E7D9A1D1C0A89CE00D81C6A /* Info.plist */,
+				6E7D9A231C0AC51A00D81C6A /* MovieCell.swift */,
+			);
+			path = "popular movies tvos";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6E7D9A101C0A89CD00D81C6A /* popular movies tvos */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6E7D9A201C0A89CE00D81C6A /* Build configuration list for PBXNativeTarget "popular movies tvos" */;
+			buildPhases = (
+				6E7D9A0D1C0A89CD00D81C6A /* Sources */,
+				6E7D9A0E1C0A89CD00D81C6A /* Frameworks */,
+				6E7D9A0F1C0A89CD00D81C6A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "popular movies tvos";
+			productName = "popular movies tvos";
+			productReference = 6E7D9A111C0A89CD00D81C6A /* popular movies tvos.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6E7D9A091C0A89CD00D81C6A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "Chazware Tech";
+				TargetAttributes = {
+					6E7D9A101C0A89CD00D81C6A = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+				};
+			};
+			buildConfigurationList = 6E7D9A0C1C0A89CD00D81C6A /* Build configuration list for PBXProject "popular movies tvos" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6E7D9A081C0A89CD00D81C6A;
+			productRefGroup = 6E7D9A121C0A89CD00D81C6A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6E7D9A101C0A89CD00D81C6A /* popular movies tvos */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6E7D9A0F1C0A89CD00D81C6A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E7D9A1C1C0A89CE00D81C6A /* Assets.xcassets in Resources */,
+				6E7D9A1A1C0A89CD00D81C6A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6E7D9A0D1C0A89CD00D81C6A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E7D9A171C0A89CD00D81C6A /* ViewController.swift in Sources */,
+				6E7D9A151C0A89CD00D81C6A /* AppDelegate.swift in Sources */,
+				6E7D9A241C0AC51A00D81C6A /* MovieCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6E7D9A181C0A89CD00D81C6A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6E7D9A191C0A89CD00D81C6A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6E7D9A1E1C0A89CE00D81C6A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = appletvos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Debug;
+		};
+		6E7D9A1F1C0A89CE00D81C6A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6E7D9A211C0A89CE00D81C6A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = "popular movies tvos/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ChazwareTech.popular-movies-tvos";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		6E7D9A221C0A89CE00D81C6A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = "popular movies tvos/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ChazwareTech.popular-movies-tvos";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6E7D9A0C1C0A89CD00D81C6A /* Build configuration list for PBXProject "popular movies tvos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E7D9A1E1C0A89CE00D81C6A /* Debug */,
+				6E7D9A1F1C0A89CE00D81C6A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6E7D9A201C0A89CE00D81C6A /* Build configuration list for PBXNativeTarget "popular movies tvos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E7D9A211C0A89CE00D81C6A /* Debug */,
+				6E7D9A221C0A89CE00D81C6A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6E7D9A091C0A89CD00D81C6A /* Project object */;
+}
