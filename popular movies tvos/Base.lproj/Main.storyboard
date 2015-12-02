@@ -41,7 +41,7 @@
                                                         <constraint firstAttribute="height" constant="479" id="8yw-bv-MFD"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jea-p9-vS5">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jea-p9-vS5" userLabel="Movie Lbl">
                                                     <rect key="frame" x="25" y="524" width="310" height="38"/>
                                                     <animations/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="21"/>
@@ -59,8 +59,8 @@
                                             <constraint firstAttribute="trailingMargin" secondItem="Ezg-aZ-o2j" secondAttribute="trailing" constant="17" id="Uss-s1-5Zw"/>
                                         </constraints>
                                         <connections>
-                                            <outlet property="moveLbl" destination="Jea-p9-vS5" id="DTr-9x-MPc"/>
                                             <outlet property="movieImg" destination="Ezg-aZ-o2j" id="g30-Aw-cyu"/>
+                                            <outlet property="movieLbl" destination="Jea-p9-vS5" id="0nD-jb-6bg"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
