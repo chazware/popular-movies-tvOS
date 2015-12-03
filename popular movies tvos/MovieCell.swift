@@ -11,15 +11,16 @@ import UIKit
 class MovieCell: UICollectionViewCell {
     
     @IBOutlet weak var movieImg: UIImageView!
+    
     @IBOutlet weak var movieLbl: UILabel!
     
     func configureCell(movie: Movie) {
         
         if let title = movie.title {
             
-            print(title)
-            
             movieLbl.text = title
+            
+            //print(movieLbl.text!)
             
         }
         
@@ -27,9 +28,11 @@ class MovieCell: UICollectionViewCell {
             
             let url = NSURL(string: path)!
             
+            print(movie.posterPath)
+            
             dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)) {
             
-                let data = NSData(contentsOfURL: url)!
+                let data = NSData(contentsOfURL: url)! // Bad practice to uprap here
                 
                 dispatch_async(dispatch_get_main_queue()) {
                     

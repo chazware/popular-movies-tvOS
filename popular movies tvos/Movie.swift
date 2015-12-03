@@ -30,6 +30,8 @@ class Movie {
         
         if let path = movieDict["posterPath"] as? String {
             
+            print(path)
+            
             self.posterPath = "\(URL_BASE)\(path)"
         }
     }

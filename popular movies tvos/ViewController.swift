@@ -18,12 +18,9 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        collectionView.registerClass(MovieCell.self, forCellWithReuseIdentifier: "MovieCell")
        
         collectionView.delegate = self
         collectionView.dataSource = self
-        
         
         
         downloadData()
@@ -62,7 +59,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
                     
                     
                     
-                } catch {   }
+                } catch { print("Serialization of JSON data failed") }
             }
             
         }
@@ -100,7 +97,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     }
     
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-            
+        
         return movies.count
         
     }

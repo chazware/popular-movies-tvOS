@@ -20,30 +20,33 @@
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="IO3-Ah-rq3">
                                 <rect key="frame" x="0.0" y="0.0" width="1244" height="700"/>
                                 <animations/>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="H0u-RN-sqQ">
-                                    <size key="itemSize" width="360" height="590"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="H0u-RN-sqQ">
+                                    <size key="itemSize" width="346" height="568"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" id="Ksd-wL-l9H" customClass="MovieCell" customModule="popular_movies_tvos" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="360" height="590"/>
+                                    <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MovieCell" id="Ksd-wL-l9H" customClass="MovieCell" customModule="popular_movies_tvos" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="66" width="346" height="568"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="360" height="590"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="346" height="568"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="thor" translatesAutoresizingMaskIntoConstraints="NO" id="Ezg-aZ-o2j">
-                                                    <rect key="frame" x="25" y="22" width="310" height="479"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="thor" translatesAutoresizingMaskIntoConstraints="NO" id="Ezg-aZ-o2j">
+                                                    <rect key="frame" x="62" y="52" width="223" height="339"/>
                                                     <animations/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="479" id="8yw-bv-MFD"/>
+                                                        <constraint firstAttribute="height" constant="339" id="fBQ-XZ-u8c"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jea-p9-vS5" userLabel="Movie Lbl">
-                                                    <rect key="frame" x="25" y="524" width="310" height="38"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jea-p9-vS5" userLabel="Movie Lbl">
+                                                    <rect key="frame" x="62" y="420" width="223" height="30"/>
                                                     <animations/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="30" id="6fJ-zw-wAg"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -54,13 +57,16 @@
                                         </view>
                                         <animations/>
                                         <constraints>
-                                            <constraint firstItem="Ezg-aZ-o2j" firstAttribute="top" secondItem="Ksd-wL-l9H" secondAttribute="topMargin" constant="14" id="PsB-iU-dVg"/>
-                                            <constraint firstItem="Ezg-aZ-o2j" firstAttribute="leading" secondItem="Ksd-wL-l9H" secondAttribute="leadingMargin" constant="17" id="Tmf-fn-DCi"/>
-                                            <constraint firstAttribute="trailingMargin" secondItem="Ezg-aZ-o2j" secondAttribute="trailing" constant="17" id="Uss-s1-5Zw"/>
+                                            <constraint firstItem="Jea-p9-vS5" firstAttribute="top" secondItem="Ezg-aZ-o2j" secondAttribute="bottom" constant="29" id="3cq-uV-Kk0"/>
+                                            <constraint firstItem="Ezg-aZ-o2j" firstAttribute="centerX" secondItem="Ksd-wL-l9H" secondAttribute="centerX" id="Slq-Df-0nS"/>
+                                            <constraint firstItem="Jea-p9-vS5" firstAttribute="leading" secondItem="Ezg-aZ-o2j" secondAttribute="leading" id="fkn-iX-1Bi"/>
+                                            <constraint firstItem="Ezg-aZ-o2j" firstAttribute="top" secondItem="Ksd-wL-l9H" secondAttribute="topMargin" constant="44" id="jdP-wH-WH1"/>
+                                            <constraint firstItem="Ezg-aZ-o2j" firstAttribute="leading" secondItem="Ksd-wL-l9H" secondAttribute="leadingMargin" constant="54" id="kSj-qz-jgb"/>
+                                            <constraint firstItem="Jea-p9-vS5" firstAttribute="trailing" secondItem="Ezg-aZ-o2j" secondAttribute="trailing" id="uhu-40-jZN"/>
                                         </constraints>
                                         <connections>
                                             <outlet property="movieImg" destination="Ezg-aZ-o2j" id="g30-Aw-cyu"/>
-                                            <outlet property="movieLbl" destination="Jea-p9-vS5" id="hNZ-yb-uk8"/>
+                                            <outlet property="movieLbl" destination="Jea-p9-vS5" id="zrl-VZ-Zp5"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
