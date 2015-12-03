@@ -65,7 +65,7 @@
                                             <constraint firstItem="Jea-p9-vS5" firstAttribute="trailing" secondItem="Ezg-aZ-o2j" secondAttribute="trailing" id="uhu-40-jZN"/>
                                         </constraints>
                                         <connections>
-                                            <outlet property="movieImg" destination="Ezg-aZ-o2j" id="g30-Aw-cyu"/>
+                                            <outlet property="movieImg" destination="Ezg-aZ-o2j" id="7hK-Dd-aVi"/>
                                             <outlet property="movieLbl" destination="Jea-p9-vS5" id="zrl-VZ-Zp5"/>
                                         </connections>
                                     </collectionViewCell>
@@ -89,7 +89,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="738" y="254"/>
+            <point key="canvasLocation" x="453" y="214"/>
         </scene>
     </scenes>
     <resources>

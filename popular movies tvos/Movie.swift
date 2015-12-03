@@ -12,6 +12,8 @@ class Movie {
     
     let URL_BASE = "http://image.tmdb.org/t/p/w500"
     
+    //let URL_BASE = "http://api.themoviedb.org/3/movie/id/images"
+    
     var title: String!
     var overview: String!
     var posterPath: String!
@@ -28,9 +30,7 @@ class Movie {
             self.overview = overview
         }
         
-        if let path = movieDict["posterPath"] as? String {
-            
-            print(path)
+        if let path = movieDict["poster_path"] as? String {
             
             self.posterPath = "\(URL_BASE)\(path)"
         }

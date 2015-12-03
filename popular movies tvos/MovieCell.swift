@@ -10,8 +10,9 @@ import UIKit
 
 class MovieCell: UICollectionViewCell {
     
-    @IBOutlet weak var movieImg: UIImageView!
+    //@IBOutlet weak var movieImg: UIImageView!
     
+    @IBOutlet weak var movieImg: UIImageView!
     @IBOutlet weak var movieLbl: UILabel!
     
     func configureCell(movie: Movie) {
