@@ -17,7 +17,10 @@ class MovieCell: UICollectionViewCell {
         
         if let title = movie.title {
             
+            print(title)
+            
             movieLbl.text = title
+            
         }
         
         if let path = movie.posterPath {

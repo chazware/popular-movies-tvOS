@@ -18,9 +18,13 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        collectionView.registerClass(MovieCell.self, forCellWithReuseIdentifier: "MovieCell")
        
         collectionView.delegate = self
         collectionView.dataSource = self
+        
+        
         
         downloadData()
     }

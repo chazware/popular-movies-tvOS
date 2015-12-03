@@ -60,7 +60,7 @@
                                         </constraints>
                                         <connections>
                                             <outlet property="movieImg" destination="Ezg-aZ-o2j" id="g30-Aw-cyu"/>
-                                            <outlet property="movieLbl" destination="Jea-p9-vS5" id="0nD-jb-6bg"/>
+                                            <outlet property="movieLbl" destination="Jea-p9-vS5" id="hNZ-yb-uk8"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
