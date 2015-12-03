@@ -34,7 +34,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="346" height="568"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="thor" translatesAutoresizingMaskIntoConstraints="NO" id="Ezg-aZ-o2j">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="thor" highlighted="YES" adjustsImageWhenAncestorFocused="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ezg-aZ-o2j">
                                                     <rect key="frame" x="62" y="52" width="223" height="339"/>
                                                     <animations/>
                                                     <constraints>
