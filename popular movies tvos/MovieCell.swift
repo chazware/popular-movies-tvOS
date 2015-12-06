@@ -21,16 +21,14 @@ class MovieCell: UICollectionViewCell {
             
             movieLbl.text = title
             
-            //print(movieLbl.text!)
-            
         }
         
         if let path = movie.posterPath {
             
             let url = NSURL(string: path)!
             
-            print(movie.posterPath)
             
+            // When downloading data from internet switch from main queue
             dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)) {
             
                 let data = NSData(contentsOfURL: url)! // Bad practice to uprap here
