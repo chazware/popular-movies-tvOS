@@ -47,6 +47,8 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
                             
                             let movie = Movie(movieDict: obj)
                             self.movies.append(movie)
+                            
+                            
                         }
                         
                         //Main UI thread
@@ -78,6 +80,14 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
             
             cell.configureCell(movie)
             
+            if cell.gestureRecognizers?.count == nil {
+                let tap = UITapGestureRecognizer(target: self, action: "tapped:")
+                tap.allowedPressTypes = [NSNumber(integer: UIPressType.Select.rawValue)]
+                cell.addGestureRecognizer(tap)
+                
+                
+            }
+            
             return cell
             
         } else {
@@ -89,6 +99,13 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         
     }
     
+    func tapped(gesture: UITapGestureRecognizer) {
+        
+        if let _ = gesture.view as? MovieCell {
+            // Load the next view controller and pass in the movie
+            print("Tap detected")
+        }
+    }
     
     func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
         
